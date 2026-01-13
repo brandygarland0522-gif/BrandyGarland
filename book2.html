@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Title Two</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/book2.png" alt="Book Title Two cover">
+      </div>
+      <div class="about-text">
+        <h2>Book Title Two</h2>
+        <p><em>Genre: Non‑fiction / Self‑help</em></p>
+        <p>This insightful book draws on years of research and personal experience to offer practical advice for living a more fulfilling life. Each chapter provides tools and exercises designed to help you set goals, overcome obstacles, and unlock your full potential.</p>
+        <p>What readers will find inside:</p>
+        <ul style="margin-bottom: 1rem; margin-left: 1.5rem; list-style: disc;">
+          <li>Actionable strategies for personal growth and resilience.</li>
+          <li>Real‑world examples that illustrate key concepts.</li>
+          <li>Reflection prompts to encourage deeper thinking and self‑discovery.</li>
+        </ul>
+        <p>Available in hardcover and digital formats.</p>
+        <a href="#" class="button" onclick="alert('Purchase links go here!')">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

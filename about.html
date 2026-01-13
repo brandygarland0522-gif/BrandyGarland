@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Author</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">About the Author</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/author.png" alt="Author portrait">
+      </div>
+      <div class="about-text">
+        <p>Hello! I'm <strong>Your Name</strong>, a passionate writer dedicated to crafting stories that inspire, educate and entertain. Over the years, I have poured my heart into creating worlds that readers can lose themselves in, characters they can connect with, and lessons that linger long after the final page. When I'm not writing, I'm exploring new ideas, mentoring aspiring authors, and reading everything I can get my hands on.</p>
+        <p>This website is the home for my collection of books. Here you'll find information about each title, upcoming events, and ways to connect with me directly. Whether you're a long-time fan or a new reader, I'm thrilled you're here and can't wait to share my stories with you.</p>
+        <p><em>Feel free to browse the site, join my newsletter, and drop me a line if you'd like to talk about books, writing, or anything in between.</em></p>
+        <a href="books.html" class="button">Explore My Books</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

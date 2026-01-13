@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Title Three</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/book3.png" alt="Book Title Three cover">
+      </div>
+      <div class="about-text">
+        <h2>Book Title Three</h2>
+        <p><em>Genre: Poetry / Memoir</em></p>
+        <p>Blending lyrical poetry with candid memoir, this collection explores themes of love, loss, and resilience. The author’s evocative language and raw honesty invite readers on a deeply personal journey that resonates with universal emotions.</p>
+        <p>Inside this book, you will find:</p>
+        <ul style="margin-bottom: 1rem; margin-left: 1.5rem; list-style: disc;">
+          <li>Poems that capture the beauty and pain of everyday life.</li>
+          <li>Reflections on overcoming adversity and finding hope.</li>
+          <li>A heartfelt narrative woven throughout the collection.</li>
+        </ul>
+        <p>Available in paperback and deluxe illustrated edition.</p>
+        <a href="#" class="button" onclick="alert('Purchase links go here!')">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

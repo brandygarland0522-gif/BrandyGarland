@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">My Books</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="images/book1.png" alt="Book Cover 1">
+        <h3>Book Title One</h3>
+        <p>This is where you can share a brief synopsis of your first book. Highlight its themes, characters, and the core message to entice readers.</p>
+        <a href="book1.html" class="button">Learn More</a>
+      </div>
+      <div class="book-card">
+        <img src="images/book2.png" alt="Book Cover 2">
+        <h3>Book Title Two</h3>
+        <p>Provide a short description of your second book. Explain what makes it unique and why readers will love it.</p>
+        <a href="book2.html" class="button">Learn More</a>
+      </div>
+      <div class="book-card">
+        <img src="images/book3.png" alt="Book Cover 3">
+        <h3>Book Title Three</h3>
+        <p>Introduce the storyline and hook of your third book. Give readers a taste of the adventure or insight awaiting them.</p>
+        <a href="book3.html" class="button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

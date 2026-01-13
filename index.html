@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: url('images/hero.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to My World of Stories</h1>
+      <p>Explore gripping tales, insightful lessons, and unforgettable characters. Dive into my collection of books and discover your next favourite read.</p>
+      <a href="books.html" class="button">Browse Books</a>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <h2 class="section-title">Featured Books</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="images/book1.png" alt="Book Cover 1">
+        <h3>Book Title One</h3>
+        <p>An engaging summary of your first book. Capture the reader’s attention with a few captivating sentences.</p>
+        <a href="book1.html" class="button">Read More</a>
+      </div>
+      <div class="book-card">
+        <img src="images/book2.png" alt="Book Cover 2">
+        <h3>Book Title Two</h3>
+        <p>A brief description of your second book. Tempt readers with intrigue and set the scene for adventure.</p>
+        <a href="book2.html" class="button">Read More</a>
+      </div>
+      <div class="book-card">
+        <img src="images/book3.png" alt="Book Cover 3">
+        <h3>Book Title Three</h3>
+        <p>Introduce your third book here. Provide a teaser that leaves visitors wanting to know more.</p>
+        <a href="book3.html" class="button">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="signup">
+    <h2 class="section-title">Stay in Touch</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem; text-align: center;">Subscribe to my newsletter to receive updates about new releases, special promotions, and exclusive content. I respect your inbox and promise only occasional emails packed with value.</p>
+    <div style="text-align: center;">
+      <a href="mailto:author@example.com?subject=Newsletter Signup" class="button">Join the Newsletter</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Update year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
