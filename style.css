@@ -164,10 +164,13 @@ header {
 }
 
 .about-image img {
+  max-width: 250px;
   width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
 }
+
 
 .about-text {
   flex: 2 1 400px;
