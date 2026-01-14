@@ -128,8 +128,8 @@ header {
 }
 
 .book-card img {
-  width: 50%;
-  height: 150px;
+  width: 100%;
+  height: 350px;
   object-fit: cover;
 }
 
