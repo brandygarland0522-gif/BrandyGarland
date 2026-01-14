@@ -51,45 +51,37 @@ header {
 
 /* Hero section */
 .hero {
-  min-height: 70vh;               /* not 900 miles tall */
-  padding: 80px 20px;
+  /* Layout – same clean structure */
+  padding: 80px 40px;
+  min-height: 60vh;
   display: flex;
   align-items: center;
 
-  background-image:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("images/hero.jpg");       /* adjust path if needed */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* Background – replace gray with something that pops */
+  background-color: #0f4c5c; /* deep slate blue */
 
-  color: #fff;
-}
-
-.hero .hero-content {
-  max-width: 900px;
-  margin: 0 auto;                /* centers content */
-  text-align: center;              /* change to center if you want */
+  /* Text */
+  color: #ffffff;
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1.05;
+  font-size: 3rem;
+  line-height: 1.1;
   margin-bottom: 16px;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  max-width: 60ch;
+  font-size: 1.1rem;
+  max-width: 600px;
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
 .hero .btn {
-  display: inline-block;
   padding: 12px 22px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
+
 
 
 /* Buttons */
