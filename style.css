@@ -51,42 +51,46 @@ header {
 
 /* Hero section */
 .hero {
-  min-height: 70vh;
+  min-height: 70vh;               /* not 900 miles tall */
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+
   background-image:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("../images/hero.jpg");
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/hero.jpg");       /* adjust path if needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   color: #fff;
 }
 
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+.hero .hero-content {
+  max-width: 900px;
+  margin: 0 auto;                /* centers content */
+  text-align: left;              /* change to center if you want */
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  padding: 2rem;
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 16px;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero p {
+  font-size: 1.15rem;
+  max-width: 60ch;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+.hero .btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
 }
+
 
 /* Buttons */
 .button {
