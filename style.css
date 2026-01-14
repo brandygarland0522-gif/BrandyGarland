@@ -167,8 +167,8 @@ header {
 
 .about-image img {
   display: block;
-  width: 250px;     /* pick the size you want */
-  height: auto;
+  width: 150px;     /* pick the size you want */
+  height: 150;
   border-radius: 6px;
   object-fit: contain;
 }
