@@ -51,7 +51,7 @@ header {
 
 /* Hero section */
 .hero {
-  position: relative;
+  position: center;
   display: flex;
   align-items: center;
   justify-content: center;
