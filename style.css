@@ -51,42 +51,37 @@ header {
 
 /* Hero section */
 .hero {
-  position: center;
+  /* Layout – same clean structure */
+  padding: 80px 40px;
+  min-height: 60vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  min-height: 60vh;
-  background-size: cover;
-  background-position: center;
+
+  /* Background – replace gray with something that pops */
+  background-color: #0f4c5c; /* deep slate blue */
+
+  /* Text */
+  color: #ffffff;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #0f4c5c(0, 0, 0, 0.5);
-}
-
-.hero-content {
-  position: center;
-  z-index: 1;
-  max-width: 800px;
-  padding: 2rem;
-}
-
-.hero-content h1 {
+.hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  line-height: 1.1;
+  margin-bottom: 16px;
 }
 
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
+
+.hero .btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+}
+
 
 
 /* Buttons */
