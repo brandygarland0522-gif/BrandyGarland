@@ -69,7 +69,7 @@ header {
 .hero .hero-content {
   max-width: 900px;
   margin: 0 auto;                /* centers content */
-  text-align: left;              /* change to center if you want */
+  text-align: center;              /* change to center if you want */
 }
 
 .hero h1 {
