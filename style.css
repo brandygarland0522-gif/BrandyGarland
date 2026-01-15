@@ -81,6 +81,20 @@ header {
   padding: 12px 22px;
   border-radius: 6px;
 }
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.preview-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
 
 
 
