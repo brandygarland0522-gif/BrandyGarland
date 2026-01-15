@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <h1>No Clean Exit</h1>
-
-<p>
-A dark psychological novel about obsession, memory, and the cost of escape.
-</p>
-
-<a href="https://a.co/d/3pKp4II">Buy on Amazon</a>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No Clean Exit | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
 
-    <a href="index.html">Home</a>    
-   
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
   <section class="section">
+    <h1 class="section-title" style="margin-bottom: 1rem;">No Clean Exit</h1>
+
+    <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center;">
+      A dark psychological novel about obsession, memory, and the cost of escape.
+    </p>
+
     <div class="about-container">
       <div class="about-image">
-       <img src="images/No Clean Exit Cover .png"
-     alt="No Clean Exit Cover"
-     style="width: 200px; height: auto;">
-
+        <img
+          src="images/No Clean Exit Cover .png"
+          alt="No Clean Exit Cover"
+          style="width: 260px; height: auto; border-radius: 8px;"
+        />
       </div>
+
       <div class="about-text">
-        <h2>No Clean Exit</h2>
         <p><em>Genre: Fiction / Inspirational</em></p>
-        <p>In this captivating novel, journey alongside the protagonist as they navigate challenges, discover hidden strengths, and uncover unexpected truths. This book blends emotional depth with compelling storytelling, leaving readers inspired and uplifted.</p>
-        <p>Highlights of this book include:</p>
-        <ul style="margin-bottom: 1rem; margin-left: 1.5rem; list-style: disc;">
+
+        <p>
+          In this captivating novel, journey alongside the protagonist as they navigate challenges,
+          discover hidden strengths, and uncover unexpected truths. This book blends emotional depth
+          with compelling storytelling, leaving readers inspired and uplifted.
+        </p>
+
+        <h3 style="margin-top: 1rem;">Highlights</h3>
+        <ul style="margin: 0.75rem 0 1.25rem 1.25rem; list-style: disc;">
           <li>A relatable hero embarking on a transformative journey.</li>
           <li>Richly drawn supporting characters and vivid settings.</li>
           <li>Themes of resilience, redemption, and the power of connection.</li>
-        <p>Available in Paperback and Ebook.</p>
-       
+        </ul>
+
+        <p><strong>Available in:</strong> Paperback and Ebook</p>
+
+        <!-- ONE Amazon Button -->
+        <a href="https://a.co/d/3pKp4II" class="button" target="_blank" style="margin-top: 1rem;">
+          Buy on Amazon
+        </a>
       </div>
     </div>
   </section>
@@ -48,9 +67,9 @@ A dark psychological novel about obsession, memory, and the cost of escape.
     <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear(2026);
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
