@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Reset Planner | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">My Books</a>
+
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1 class="section-title" style="margin-bottom: 0.75rem;">Weekly Reset Planner</h1>
+
+    <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center;">
+      A clean, undated weekly planner built for clarity: monthly planning, budgeting, brain dumps,
+      reading tracker, and lists.
+    </p>
+
+    <div class="about-container">
+      <div class="about-image">
+        <!-- CHANGE THIS COVER IMAGE -->
+        <img
+          src="images/weekly-planner-cover.jpg"
+          alt="Weekly Reset Planner cover"
+          style="width: 260px; height: auto; border-radius: 8px;"
+        />
+      </div>
+
+      <div class="about-text">
+        <p><em>Genre: Fun</em></p>
+
+        <h3 style="margin-top: 1rem;">What’s inside</h3>
+        <ul style="margin: 0.75rem 0 1.25rem 1.25rem; list-style: disc;">
+          <li>Undated weekly planner with monthly planning</li>
+          <li>Monthly budgeting, end-of-month brain dumps, reading tracker</li>
+          <li>Built for clarity</li>
+        </ul>
+
+        <p><strong>Available in:</strong> Paperback</p>
+
+        <!-- CHANGE THIS AMAZON LINK -->
+        <a href="https://a.co/d/6WIVcGW" class="button" target="_blank" style="margin-top: 1rem;">
+          Buy on Amazon
+        </a>
+
+        <h3 style="margin-top: 2rem;">Preview Pages</h3>
+
+        <!-- SAME PREVIEWS FOR ALL PLANNERS -->
+        <div class="preview-grid">
+          <a href="images/previews/full/1st-page-of-weekly.png">
+            <img src="images/previews/1st-page-of-weekly-400.png" alt="Weekly page one">
+          </a>
+
+          <a href="images/previews/full/2nd-page-of-weekly.png">
+            <img src="images/previews/2nd-page-of-weekly-400.png" alt="Weekly page two">
+          </a>
+
+          <a href="images/previews/full/Monthly-planner.png">
+            <img src="images/previews/Monthly-planner-400.png" alt="Monthly layout">
+          </a>
+
+          <a href="images/previews/full/Monthly-budget.png">
+            <img src="images/previews/Monthly-budget-400.png" alt="Monthly budget">
+          </a>
+
+          <a href="images/previews/full/Monthly-tracker.png">
+            <img src="images/previews/Monthly-tracker-400.png" alt="Goal tracker">
+          </a>
+
+          <a href="images/previews/full/Planner-list.png">
+            <img src="images/previews/Planner-list-400.png" alt="Contact list">
+          </a>
+
+          <a href="images/previews/full/Planner-page.png">
+            <img src="images/previews/Planner-page-400.png" alt="Inspirational page">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear(2026);
+  </script>
+</body>
+</html>
 
