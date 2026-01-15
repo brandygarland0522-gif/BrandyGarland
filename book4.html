@@ -93,6 +93,36 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  document.querySelectorAll(".preview-grid a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      lightboxImg.src = link.href;
+      lightbox.style.display = "flex";
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+    lightbox.setAttribute("aria-hidden", "true");
+  }
+
+  lightboxClose.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
+</script>
 
 </body>
   <div id="lightbox" class="lightbox" aria-hidden="true">
