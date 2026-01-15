@@ -18,26 +18,19 @@
     <div class="about-container">
 
       <div class="about-image">
-        <img 
-          src="images/weekly-reset-planner.png"
-          alt="Weekly Reset Planner cover"
-          style="width: 300px; height: auto;"
-        >
+        <img src="images/weekly-reset-planner.png" alt="Weekly Reset Planner cover" style="width:300px; height:auto;">
       </div>
 
       <div class="about-text">
         <h2>Weekly Reset Planner</h2>
-
         <p><em>Genre: Fun</em></p>
 
         <p>
           A clean, undated weekly planner with monthly planning, budgeting,
-          brain dump space, book tracking, and concept lists.
-          Built for clarity, not aesthetics.
+          brain dump space, book tracking, and concept lists. Built for clarity, not aesthetics.
         </p>
 
         <p>Inside this book, you will find:</p>
-
         <ul>
           <li>Undated weekly planner with monthly planning</li>
           <li>Monthly budgeting, end-of-month brain dumps, reading tracker</li>
@@ -49,40 +42,17 @@
         <h3>Preview Pages</h3>
 
         <div class="preview-grid">
-          <a href="images/previews/full/planner-belongs-to.png">
-            <img src="images/previews/thumbs/planner-belongs-to-400.png" alt="Planner belongs to page">
-          </a>
-
-          <a href="images/previews/full/monthly-planner.png">
-            <img src="images/previews/thumbs/monthly-planner-400.png" alt="Monthly layout">
-          </a>
-
-          <a href="images/previews/full/weekly-1.png">
-            <img src="images/previews/thumbs/weekly-1-400.png" alt="Weekly page one">
-          </a>
-
-          <a href="images/previews/full/weekly-2.png">
-            <img src="images/previews/thumbs/weekly-2-400.png" alt="Weekly page two">
-          </a>
-
-          <a href="images/previews/full/monthly-budget.png">
-            <img src="images/previews/thumbs/monthly-budget-400.png" alt="Monthly budget">
-          </a>
-
-          <a href="images/previews/full/monthly-tracker.png">
-            <img src="images/previews/thumbs/monthly-tracker-400.png" alt="Goal tracker">
-          </a>
-
-          <a href="images/previews/full/contact-list.png">
-            <img src="images/previews/thumbs/contact-list-400.png" alt="Contact list">
-          </a>
-
-          <a href="images/previews/full/inspirational-page.png">
-            <img src="images/previews/thumbs/inspirational-page-400.png" alt="Inspirational page">
-          </a>
+          <a href="images/previews/full/planner-belongs-to.png"><img src="images/previews/thumbs/planner-belongs-to-400.png" alt="Planner belongs to page"></a>
+          <a href="images/previews/full/monthly-planner.png"><img src="images/previews/thumbs/monthly-planner-400.png" alt="Monthly layout"></a>
+          <a href="images/previews/full/weekly-1.png"><img src="images/previews/thumbs/weekly-1-400.png" alt="Weekly page one"></a>
+          <a href="images/previews/full/weekly-2.png"><img src="images/previews/thumbs/weekly-2-400.png" alt="Weekly page two"></a>
+          <a href="images/previews/full/monthly-budget.png"><img src="images/previews/thumbs/monthly-budget-400.png" alt="Monthly budget"></a>
+          <a href="images/previews/full/monthly-tracker.png"><img src="images/previews/thumbs/monthly-tracker-400.png" alt="Goal tracker"></a>
+          <a href="images/previews/full/contact-list.png"><img src="images/previews/thumbs/contact-list-400.png" alt="Contact list"></a>
+          <a href="images/previews/full/inspirational-page.png"><img src="images/previews/thumbs/inspirational-page-400.png" alt="Inspirational page"></a>
         </div>
-
       </div>
+
     </div>
   </section>
 
@@ -90,45 +60,50 @@
     <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
   </footer>
 
+  <!-- Lightbox (inside body) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-<script>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-  const lightboxClose = document.getElementById("lightboxClose");
 
-  document.querySelectorAll(".preview-grid a").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      lightboxImg.src = link.href;
-      lightbox.style.display = "flex";
-      lightbox.setAttribute("aria-hidden", "false");
+    document.addEventListener("DOMContentLoaded", () => {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxClose = document.getElementById("lightboxClose");
+
+      document.querySelectorAll(".preview-grid a").forEach(link => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          lightboxImg.src = link.href;
+          lightbox.style.display = "flex";
+          lightbox.setAttribute("aria-hidden", "false");
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
+        lightbox.setAttribute("aria-hidden", "true");
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
     });
-  });
-
-  function closeLightbox() {
-    lightbox.style.display = "none";
-    lightboxImg.src = "";
-    lightbox.setAttribute("aria-hidden", "true");
-  }
-
-  lightboxClose.addEventListener("click", closeLightbox);
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeLightbox();
-  });
-</script>
+  </script>
 
 </body>
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-  <span class="lightbox-close" id="lightboxClose">&times;</span>
-  <img id="lightboxImg" src="" alt="">
-</div>
-
 </html>
+
+
+
 
