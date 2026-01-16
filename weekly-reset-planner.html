@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Reset Planner | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Weekly Reset Planner</h2>
+      <p>Undated weekly planning built for clarity: monthly planning, budgeting, brain dumps, reading tracker, and lists.</p>
+    </div>
+
+    <div class="split">
+
+      <!-- Main card -->
+      <article class="card">
+        <div class="cover">
+          <img src="images/weekly-planner-cover.jpg" alt="Weekly Reset Planner cover">
+        </div>
+
+        <div class="card-body">
+          <p class="muted" style="margin-bottom: 10px;">
+            Type: Planner / Productivity · Paperback
+          </p>
+
+          <p>
+            A clean, undated weekly planner with monthly planning, budgeting, brain dump space,
+            a reading tracker, and room for lists. Built for people who want function first.
+          </p>
+
+          <div class="rule"></div>
+
+          <h3>What’s inside</h3>
+          <ul style="margin-top: 10px; padding-left: 18px; color: var(--muted);">
+            <li>Undated weekly pages + monthly planning</li>
+            <li>Monthly budgeting + end-of-month brain dump</li>
+            <li>Reading tracker + list pages</li>
+          </ul>
+
+          <p style="margin-top: 14px;">
+            <strong>Available in:</strong> Paperback
+          </p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://a.co/d/6WIVcGW" target="_blank" rel="noopener">
+              Buy on Amazon
+            </a>
+            <a class="btn btn-ghost" href="books.html">
+              Back to Books
+            </a>
+          </div>
+
+          <div class="rule"></div>
+
+          <h3>Preview Pages</h3>
+          <p class="small">Click a thumbnail to enlarge.</p>
+
+          <div class="preview-grid">
+            <a href="images/previews/full/1st-page-of-weekly.png">
+              <img src="images/previews/1st-page-of-weekly-400.png" alt="Weekly page one">
+            </a>
+
+            <a href="images/previews/full/2nd-page-of-weekly.png">
+              <img src="images/previews/2nd-page-of-weekly-400.png" alt="Weekly page two">
+            </a>
+
+            <a href="images/previews/full/Monthly-planner.png">
+              <img src="images/previews/Monthly-planner-400.png" alt="Monthly layout">
+            </a>
+
+            <a href="images/previews/full/Monthly-budget.png">
+              <img src="images/previews/Monthly-budget-400.png" alt="Monthly budget">
+            </a>
+
+            <a href="images/previews/full/Monthly-tracker.png">
+              <img src="images/previews/Monthly-tracker-400.png" alt="Monthly tracker">
+            </a>
+
+            <a href="images/previews/full/Planner-list.png">
+              <img src="images/previews/Planner-list-400.png" alt="List page">
+            </a>
+
+            <a href="images/previews/full/Planner-page.png">
+              <img src="images/previews/Planner-page-400.png" alt="Notes page">
+            </a>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="panel">
+        <h3>Best for</h3>
+        <ul>
+          <li>People who want simple structure</li>
+          <li>Undated planning (start anytime)</li>
+          <li>Budget + brain dump in one place</li>
+        </ul>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          This is the “get your life together quietly” planner. No glitter, no guilt.
+        </p>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    document.querySelectorAll(".preview-grid a").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        lightboxImg.src = link.href;
+        lightbox.style.display = "flex";
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = "none";
+      lightboxImg.src = "";
+      lightbox.setAttribute("aria-hidden", "true");
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
+    });
+  });
+</script>
+
+</body>
+</html>
+
