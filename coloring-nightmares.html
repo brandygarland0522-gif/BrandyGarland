@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coloring Nightmares | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+
+      <div class="nav-links">
+        <a href="books.html" aria-current="page">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Coloring Nightmares</h2>
+      <p>Clean scary. Minimal black. Plenty of room to color.</p>
+    </div>
+
+    <div class="split">
+
+      <!-- Main card -->
+      <article class="card">
+        <div class="cover">
+          <img src="images/coloring-nightmares.jpg" alt="Coloring Nightmares cover">
+        </div>
+
+        <div class="card-body">
+          <p class="muted" style="margin-bottom: 10px;">
+            Genre: Coloring Book / Horror-ish (but not gross)
+          </p>
+
+          <p>
+            <strong>Coming soon.</strong> This coloring book is built for people who want spooky, clean line art
+            without heavy fill or messy shading. Relaxing, creepy, and actually fun to color.
+          </p>
+
+          <div class="rule"></div>
+
+          <h3>Inside this book</h3>
+          <ul style="margin-top: 10px; padding-left: 18px; color: var(--muted);">
+            <li>Black-and-white illustrations with bold outlines and open space.</li>
+            <li>Scary-but-clean designs (creepy, not disgusting).</li>
+            <li>Single-sided pages so ink bleed-through is less likely.</li>
+          </ul>
+
+          <p style="margin-top: 14px;">
+            <strong>Format:</strong> Paperback
+          </p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-ghost" href="books.html">Back to Books</a>
+            <!-- Replace # with your real link when ready -->
+            <a class="btn btn-primary" href="#" onclick="alert('Add the purchase link when it’s live.'); return false;">
+              Buy (Coming Soon)
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="panel">
+        <h3>Good if you like</h3>
+        <ul>
+          <li>Spooky vibe without gore</li>
+          <li>Clean outlines</li>
+          <li>Open space for coloring</li>
+        </ul>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          When you’re ready, swap the “Buy (Coming Soon)” button link to Amazon and change the button text to “Buy on Amazon.”
+        </p>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
