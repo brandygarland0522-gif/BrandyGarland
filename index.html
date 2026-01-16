@@ -3,67 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Brandy Garland</title>
+  <title>Brandy Garland | Books, Merch, Stories</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- Navigation -->
-  <header>
+<header>
+  <div class="container">
     <nav class="navbar">
-      <a href="index.html" class="navbar-brand">Brandy Garland</a>
+      <a class="brand" href="index.html">Brandy Garland</a>
 
-      <div class="navbar-links">
-        <a href="index.html">Home</a>
+      <div class="nav-links">
         <a href="books.html">Books</a>
-        <a href="merch.html">Merch</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- About -->
-  <section class="section">
-    <h1 class="section-title">About the Author</h1>
+<main class="container">
 
-    <div class="about-wrap">
-      <div class="about-photo">
-        <!-- Change this filename to your actual image -->
-        <img class="author-photo" src="images/brandy.jpg" alt="Brandy Garland" />
-      </div>
-
-      <div class="about-copy">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <h1>Dark fiction with emotional teeth. Stories that don’t comfort on command.</h1>
         <p>
-          I write dark fiction with emotional teeth, and I keep faith honest. I’m interested
-          in what people do when they’re cornered, what love costs, and what truth looks like
-          when you stop performing it.
+          I write about what people do when they’re cornered, what love costs, and what truth looks like when you stop performing it.
+          If you read closely and think for yourself, you’ll feel at home here.
         </p>
 
-        <p>
-          You’ll find stories here that don’t comfort on command. They ask better questions.
-          If you’re the type who reads closely and thinks for yourself, you’re in the right place.
-        </p>
-
-        <div class="about-actions">
-          <a href="books.html" class="button">Browse Books</a>
-          <a href="contact.html" class="button secondary">Get in Touch</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="books.html">Browse Books</a>
+          <a class="btn btn-ghost" href="stories.html">Read Stories</a>
         </div>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          Latest release: <strong>The Memory That Killed Her</strong>  
+          <span class="muted">·</span>
+          <a class="link" href="book.html">View book page</a>
+        </p>
       </div>
+
+      <aside class="hero-card">
+        <div class="label">Start here</div>
+        <h3>New? Don’t overthink it.</h3>
+        <p>Pick a book if you want plot. Pick a story if you want the real voice behind it. Shop if you want wearable sarcasm.</p>
+
+        <div class="mini-actions">
+          <a class="btn btn-primary" href="books.html">Books</a>
+          <a class="btn btn-ghost" href="merch.html">Shop</a>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-  </footer>
+  <!-- FEATURED BOOKS -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Featured Books</h2>
+      <p>Short hooks. No chaos.</p>
+    </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="cover">
+          <img src="images/memory-that-killed-her.jpg" alt="The Memory That Killed Her cover">
+        </div>
+        <div class="card-body">
+          <h3>The Memory That Killed Her</h3>
+          <p>Once you start remembering with Morgan, there is no going back.</p>
+          <div class="meta"><a class="link" href="book.html">Read more</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover">
+          <img src="images/no-clean-exit.jpg" alt="No Clean Exit cover">
+        </div>
+        <div class="card-body">
+          <h3>No Clean Exit</h3>
+          <p>Obsession, memory, and the cost of escape.</p>
+          <div class="meta"><a class="link" href="book.html">Read more</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover">
+          <img src="images/not-without-asking.jpg" alt="Not Without Asking cover">
+        </div>
+        <div class="card-body">
+          <h3>Not Without Asking</h3>
+          <p>Magic, old bloodlines, and love the world wants to punish.</p>
+          <div class="meta"><a class="link" href="book.html">Read more</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top:16px;">
+      <a class="btn btn-ghost" href="books.html">See all books</a>
+    </div>
+  </section>
+
+  <!-- LATEST STORIES -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Recent Stories</h2>
+      <p>Personal writing. Short reads.</p>
+    </div>
+
+    <div class="grid">
+      <div class="story">
+        <h3>Faith, but honest</h3>
+        <p>What I keep, what I question, and why certainty is rarely the point.</p>
+        <div class="meta">3 min read · <a class="link" href="stories.html">Read</a></div>
+      </div>
+
+      <div class="story">
+        <h3>What survival looks like in real life</h3>
+        <p>The version that doesn’t fit neatly into a quote graphic.</p>
+        <div class="meta">5 min read · <a class="link" href="stories.html">Read</a></div>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;">
+      <a class="btn btn-ghost" href="stories.html">Go to stories</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
+
 
 
