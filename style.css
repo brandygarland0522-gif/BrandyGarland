@@ -284,6 +284,60 @@ header {
   .hero {
     padding: 60px 20px;
   }
+   /* =========================
+   Contact Page
+========================= */
+
+.contact-section {
+  background: #f3fbfc; /* soft teal */
+}
+
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: #355f66;
+  font-size: 1rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #cfe6ea;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #355f66;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #cfe6ea;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0077b6;
+}
+
 }
 
 
