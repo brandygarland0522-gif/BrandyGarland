@@ -1,9 +1,12 @@
-/* Global styles */
+/* =========================
+   Global Reset
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -17,17 +20,21 @@ body {
   background: #fff;
 }
 
+/* =========================
+   Header & Navigation
+========================= */
 header {
   background: #f7f7f7;
   border-bottom: 1px solid #ddd;
 }
 
-/* Navigation */
 .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
 }
 
 .navbar-brand {
@@ -42,149 +49,75 @@ header {
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
   color: #0077b6;
 }
 
-/* Hero section */
-.hero {
-  /* Layout – same clean structure */
-  padding: 80px 40px;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-
-  /* Background – replace gray with something that pops */
-  background-color: #0f4c5c; /* deep slate blue */
-
-  /* Text */
-  color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-.hero .btn {
-  padding: 12px 22px;
-  border-radius: 6px;
-}
-.preview-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.preview-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-}
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  z-index: 9999;
-}
-
-.lightbox img {
-  max-width: 95vw;
-  max-height: 90vh;
-  border-radius: 10px;
-}
-
-.lightbox-close {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: #fff;
-  cursor: pointer;
-  line-height: 1;
-}
-
-
-
-/* Buttons */
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  background: #0077b6;
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background: #005a8d;
-}
-.merch-btn {
-  display: inline-block;
-  width: 100%;
-  padding: 12px 16px;
-  background-color: #0a6ebd; /* your blue */
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.merch-btn:hover {
-  background-color: #084f8a;
-}
-
-
-/* Sections */
+/* =========================
+   Sections
+========================= */
 .section {
   padding: 4rem 2rem;
 }
 
 .section-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   color: #333;
 }
+
+/* =========================
+   Buttons (Global)
+========================= */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #005a8d;
+}
+
+.button.secondary {
+  background: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.button.secondary:hover {
+  background: #e6e6e6;
+}
+
+/* =========================
+   Merch Grid
+========================= */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
 }
 
 .product-card img {
-  width: 100%;
   height: 320px;
   object-fit: contain;
   background: #fff;
@@ -202,132 +135,120 @@ header {
 }
 
 .product-card a {
-  margin: 0 1rem;
+  margin: 0 1rem 1.25rem;
+  align-self: flex-start;
 }
 
+/* Merch buttons (NOT full width) */
+.merch-btn {
+  width: auto;
+}
+
+/* =========================
+   Book Grid
+========================= */
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .book-card {
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .book-card img {
-  width: 100%;
   height: 350px;
   object-fit: contain;
-  background: #fff; /* or #f7f7f7, gives it a clean frame */
+  background: #fff;
 }
 
-
-
 .book-card h3 {
-  font-size: 1.25rem;
   margin: 1rem;
   color: #0077b6;
 }
 
 .book-card p {
-  font-size: 0.9rem;
   margin: 0 1rem 1rem;
+  font-size: 0.95rem;
   flex-grow: 1;
 }
 
 .book-card a {
-  margin: 1rem;
+  margin: 0 1rem 1.25rem;
 }
 
-/* About page */
+/* =========================
+   Product / About Layout
+========================= */
 .about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
   align-items: flex-start;
 }
 
 .about-image {
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
-
 .about-image img {
-  display: block;
-  width: 150px;     /* pick the size you want */
-  height: 150;
-  border-radius: 6px;
-  object-fit: contain;
+  max-width: 300px;
+  border-radius: 8px;
 }
-
-
 
 .about-text {
-  flex: 2 1 400px;
+  flex: 2;
 }
 
-/* Contact form */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form label {
-  display: block;
+.about-text h1 {
   margin-bottom: 0.5rem;
-  font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+.subtitle {
+  color: #555;
+  margin-bottom: 1.25rem;
 }
 
-.contact-form textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.contact-form button {
-  padding: 0.75rem 1.5rem;
-  background: #0077b6;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-form button:hover {
-  background: #005a8d;
-}
-
-/* Footer */
+/* =========================
+   Footer
+========================= */
 .footer {
   background: #f7f7f7;
   padding: 2rem;
   text-align: center;
   font-size: 0.9rem;
   color: #555;
+  margin-top: 4rem;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.5rem; }
-  .hero-content p { font-size: 1rem; }
-  .about-container { flex-direction: column; text-align: center; }
-  .about-image img { max-width: 200px; margin: 0 auto; }
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 220px;
+  }
+
+  .product-card a,
+  .book-card a {
+    align-self: center;
+  }
 }
 
 
