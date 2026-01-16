@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Title | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="split">
+      <div class="card">
+        <div class="cover">
+          <img src="images/memory-that-killed-her.jpg" alt="Book cover">
+        </div>
+        <div class="card-body">
+          <h3>The Memory That Killed Her</h3>
+          <p class="muted">Genre: Fiction / Mystery · Dark psychological noir</p>
+
+          <div class="rule"></div>
+
+          <p>
+            Once you start remembering with Morgan, there is no going back.
+            Love conceals power. Obedience is rewarded. Survival has a cost.
+          </p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://a.co/" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn btn-ghost" href="books.html">Back to Books</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <h3>Quick details</h3>
+        <ul>
+          <li>Perfect for slow-burn dread</li>
+          <li>Character-driven tension</li>
+          <li>Emotionally sharp, not cozy</li>
+        </ul>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          Want preview pages? Add images under <code>images/previews/</code> and link them here.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
