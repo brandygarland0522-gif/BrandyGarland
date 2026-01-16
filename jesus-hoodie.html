@@ -78,3 +78,121 @@
       text-decoration: none;
       font-weight: 700;
       margin-right: 10px;
+    }
+
+    .button.secondary {
+      background: #f2f2f2;
+      color: #111;
+      border: 1px solid #ddd;
+      font-weight: 700;
+    }
+
+    .details {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 10px 0 0;
+    }
+
+    .fineprint {
+      margin-top: 14px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .backlink {
+      display: inline-block;
+      margin-top: 30px;
+      color: #222;
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid #eaeaea;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 900px) {
+      .product {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div><strong>Read It Again Studio</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="merch.html">Merch</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <!-- Update this image path to match your file name in /images -->
+      <div>
+        <img src="images/jesus-i-never-said-that-hoodie.png" alt="Jesus: I Never Said That hoodie">
+      </div>
+
+      <div>
+        <h1>Jesus: I Never Said That</h1>
+        <p class="subtitle">Minimalist faith humor hoodie with clean typography.</p>
+
+        <!-- Optional: set your price or remove this line -->
+        <div class="price">$35.97</div>
+
+        <!-- Replace the link below with your Printify (or store) product URL -->
+        <a class="button" href="read-it-again-studio.printify.me" target="_blank" rel="noopener">
+          Buy Now
+        </a>
+
+        <a class="button secondary" href="merch.html">
+          Back to Merch
+        </a>
+
+        <div class="details">
+          <h3>Product Details</h3>
+          <ul>
+            <li>Soft, everyday hoodie style (unisex)</li>
+            <li>Clean, readable minimalist print</li>
+            <li>Great for casual wear, church, or gifting</li>
+            <li>Faith humor without the noise</li>
+          </ul>
+
+          <p class="fineprint">
+            Note: Colors may vary slightly depending on screen settings. For best results, wash inside out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a class="backlink" href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Read It Again Studio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear(2026);
+  </script>
+
+</body>
+</html>
+
