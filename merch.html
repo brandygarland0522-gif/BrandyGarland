@@ -3,61 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merch | Read It Again Studio</title>
+  <title>Shop | Brandy Garland</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
 <header>
-  <nav class="navbar">
-    <a href="index.html" class="navbar-brand">Read It Again Studio</a>
-    <div class="navbar-links">
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="merch.html">Merch</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html" aria-current="page">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<section class="section">
-  <h1 class="section-title">Merch</h1>
-  <p style="max-width:800px;margin:0 auto 2rem;text-align:center;">
-    Shirts and other things you can wear while reading, writing,
-    recovering, or surviving daily responsibilities.
-  </p>
+<main class="container">
 
-  <div class="products-grid">
-
-    <!-- Tee -->
-    <div class="product-card">
-      <img src="images/tee.png" alt="Unisex Jersey Short Sleeve Tee">
-      <h3>Unisex Jersey Short Sleeve Tee</h3>
-      <p>Soft, lightweight unisex tee designed for everyday wear.</p>
-      <a href="merch-tee.html" class="button merch-btn">View Product</a>
+  <section class="section">
+    <div class="section-title">
+      <h2>Shop</h2>
+      <p>Wearable commentary for people who don’t explain themselves.</p>
     </div>
 
-    <!-- Hoodie -->
-    <div class="product-card">
-      <img src="images/jesus-i-never-said-that-hoodie.png" alt="Jesus I Never Said That Hoodie">
-      <h3>Jesus: I Never Said That</h3>
-      <p>Minimalist faith humor hoodie with clean typography.</p>
-      <a href="jesus-hoodie.html" class="button merch-btn">View Product</a>
-    </div>
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="cover">
+          <img src="images/merch-shirt-1.jpg" alt="Merch item">
+        </div>
+        <div class="card-body">
+          <h3>Unisex Tee</h3>
+          <p>Clean design. Loud message.</p>
+          <div class="meta"><a class="link" href="https://brandy-garland.printify.me/" target="_blank" rel="noopener">Buy</a></div>
+        </div>
+      </article>
 
+      <article class="card">
+        <div class="cover">
+          <img src="images/merch-hoodie-1.jpg" alt="Merch item">
+        </div>
+        <div class="card-body">
+          <h3>Hoodie</h3>
+          <p>Because boundaries deserve fabric.</p>
+          <div class="meta"><a class="link" href="https://brandy-garland.printify.me/" target="_blank" rel="noopener">Buy</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="cover">
+          <img src="images/merch-sticker-1.jpg" alt="Merch item">
+        </div>
+        <div class="card-body">
+          <h3>Sticker</h3>
+          <p>Small, petty, effective.</p>
+          <div class="meta"><a class="link" href="https://brandy-garland.printify.me/" target="_blank" rel="noopener">Buy</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland.</p>
   </div>
-</section>
-
-<footer class="footer">
-  <p>&copy; <span id="year"></span> Read It Again Studio</p>
 </footer>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear(2026);
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
 
