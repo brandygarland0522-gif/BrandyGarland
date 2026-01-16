@@ -24,7 +24,7 @@ body {
    Header & Navigation
 ========================= */
 header {
-  background: #e6f4f6;
+  background: #e6f4f6; /* teal instead of gray */
   border-bottom: 1px solid #cfe7ea;
 }
 
@@ -56,18 +56,21 @@ header {
 }
 
 /* =========================
-   HERO
+   Hero (welcome page)
 ========================= */
 .hero {
   position: relative;
-  min-height: 38vh;
+  min-height: 42vh;
   display: flex;
   align-items: center;
-  padding: 60px 40px;
+  padding: 70px 40px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+
+  /* fallback if hero image path is wrong */
+  background-color: #0f4c5c;
 }
 
 .hero-overlay {
@@ -100,35 +103,20 @@ header {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  margin-top: 8px;
 }
 
-.hero-note {
+.hero-links {
   margin-top: 12px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.85);
-}
-
-/* =========================
-   Buttons
-========================= */
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #0077b6;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.button:hover {
-  background: #005a8d;
-}
-
-.button.secondary {
-  background: #f2f2f2;
-  color: #111;
-  border: 1px solid #ddd;
 }
 
 /* =========================
@@ -142,11 +130,35 @@ header {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #333;
 }
 
-.section-cta {
-  text-align: center;
-  margin-top: 2rem;
+/* =========================
+   Buttons (Global)
+========================= */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #005a8d;
+}
+
+.button.secondary {
+  background: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.button.secondary:hover {
+  background: #e6e6e6;
 }
 
 /* =========================
@@ -161,17 +173,19 @@ header {
 }
 
 .book-card {
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .book-card img {
-  height: 340px;
+  height: 350px;
   object-fit: contain;
+  background: #fff;
 }
 
 .book-card h3 {
@@ -191,6 +205,38 @@ header {
 }
 
 /* =========================
+   About Page Layout (fix giant photo)
+========================= */
+.about-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.author-photo {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.about-copy p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* =========================
    Footer
 ========================= */
 .footer {
@@ -205,16 +251,26 @@ header {
 /* =========================
    Responsive
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero {
-    padding: 45px 20px;
-    min-height: 34vh;
+    padding: 55px 20px;
+    min-height: 38vh;
   }
 
   .hero-content h1 {
     font-size: 2.2rem;
   }
+
+  .about-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .author-photo {
+    max-width: 260px;
+    margin: 0 auto;
+  }
 }
+
 
 
 
