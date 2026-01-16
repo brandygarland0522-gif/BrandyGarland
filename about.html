@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Author</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+<header>
+  <div class="container">
     <nav class="navbar">
-      <a href="index.html" class="navbar-brand">My Books</a>
-      <div class="navbar-links" id="navbar-links">
-        <a href="index.html">Home</a>
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
         <a href="books.html">Books</a>
-        <a href="about.html">About</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html" aria-current="page">About</a>
         <a href="contact.html">Contact</a>
       </div>
     </nav>
-  </header>
+  </div>
+</header>
+
+<main class="container">
 
   <section class="section">
-    <h2 class="section-title">About the Author</h2>
-    <div class="about-container">
-      <div class="about-image">
-        <img src="images/pic.gif" alt="Brandy Garland">
+    <div class="section-title">
+      <h2>About</h2>
+      <p>Who I am, minus the fake polish.</p>
+    </div>
 
+    <div class="about">
+      <div class="portrait">
+        <img src="images/brandy.jpg" alt="Brandy Garland portrait">
       </div>
-      <div class="about-text">
-      <p>
-Brandy Garland is an author of dark fiction and emotionally driven stories that explore power, love, memory, and the consequences of wanting more than the world allows. Her work blends psychological tension with intimate character studies, often focusing on flawed women, dangerous connections, and the quiet moments where everything changes.
-</p>
 
-<p>
-She writes across genres including dark romance, psychological suspense, and speculative fantasy, with a style that favors restraint, intensity, and emotional truth over spectacle. Her stories are known for their slow-burn tension, morally gray characters, and endings that linger.
-</p>
+      <div>
+        <p>
+          I write dark fiction with emotional teeth, and I keep faith honest.
+          I’m interested in what people do when they’re cornered, what love costs,
+          and what truth looks like when you stop performing it.
+        </p>
 
-<p>
-When she isn’t writing, Brandy works as a recovery coach and educator, a background that deeply influences her understanding of human behavior, resilience, and choice. She lives in Michigan and writes late at night, usually when she should be doing something more responsible.
-</p>
+        <p>
+          You’ll find stories here that don’t comfort on command.
+          They ask better questions. If you’re the type who reads closely
+          and thinks for yourself, you’re in the right place.
+        </p>
 
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="books.html">Browse Books</a>
+          <a class="btn btn-ghost" href="contact.html">Get in Touch</a>
+        </div>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          Want the personal writing? Go to <a class="link" href="stories.html">Stories</a>.
+          That’s the real center of this site.
+        </p>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear(2026);
-  </script>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
