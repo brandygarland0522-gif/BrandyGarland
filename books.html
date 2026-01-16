@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Books</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
- <div class="navbar-links">
-  <a href="index.html">Home</a>
-  <a href="books.html">Books</a>
-  <a href="merch.html">Merch</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</div>
 
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html" aria-current="page">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
-  </header>
+  </div>
+</header>
+
+<main class="container">
 
   <section class="section">
-    <h2 class="section-title">My Books</h2>
-    <div class="books-grid">
-      <div class="book-card">
-        <img src="images/No Clean Exit Cover .png" alt="No Clean Exit Cover">
-        <h3>No Clean Exit</h3>
-        <p>A dark psychological novel about obsession, memory, and the cost of escape.</p>
-        <a href="book1.html" class="button">Learn More</a>
+    <div class="section-title">
+      <h2>Books</h2>
+      <p>Pick a cover. Read the hook. Commit like an adult.</p>
+    </div>
+
+    <div class="split">
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="cover">
+            <img src="images/memory-that-killed-her.jpg" alt="The Memory That Killed Her cover">
+          </div>
+          <div class="card-body">
+            <h3>The Memory That Killed Her</h3>
+            <p>Once you start remembering with Morgan, there is no going back.</p>
+            <div class="meta"><a class="link" href="book.html">View details</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="cover">
+            <img src="images/no-clean-exit.jpg" alt="No Clean Exit cover">
+          </div>
+          <div class="card-body">
+            <h3>No Clean Exit</h3>
+            <p>Obsession, memory, and the cost of escape.</p>
+            <div class="meta"><a class="link" href="book.html">View details</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="cover">
+            <img src="images/not-without-asking.jpg" alt="Not Without Asking cover">
+          </div>
+          <div class="card-body">
+            <h3>Not Without Asking</h3>
+            <p>Magic, old bloodlines, and love the world wants to punish.</p>
+            <div class="meta"><a class="link" href="book.html">View details</a></div>
+          </div>
+        </article>
       </div>
-      <div class="book-card">
-        <img src="images/The Memory That Killed Her Cover .png" alt="The Memory That Killed Her Cover">
-        <h3>The Memery That Killed Her</h3>
-        <p>how power hides inside love,how power hides inside love, how systems reward obedience, and how survival sometimes requires choosing who gets to feel safe.</p>
-        <a href="book2.html" class="button">Learn More</a>
-      </div>
-      <div class="book-card">
-        <img src="images/Coloring Nightmares Cover .png" alt="Coloring Nightmares Cover">
-        <h3>Coloring Nightmares</h3>
-        <p>Coming Soon.</p>
-        <a href="book3.html" class="button">Learn More</a>
-      </div>
-       <div class="book-card">
-        <img src="images/Weekly Reset Planner.png" alt="Weekly Reset Planner Cover">
-        <h3>Weekly Reset Planner</h3>
-        <p>Weekly Reset Planner</p>
-        <a href="book4.html" class="button">Read More</a>
-      </div> 
-      <div class="book-card">
-        <img src="weekly-planner-cover.jpg" alt="Weekly Planner Cover">
-        <h3>Weekly Reset Planner</h3>
-        <p>Weekly Reset Planner</p>
-        <a href="book5.html" class="button">Read More</a>
-      </div>   
-      <div class="book-card">
-        <img src="weekly-planner-book6.jpg" alt="Weekly Planner Cover">
-        <h3>Weekly Planner</h3>
-        <p>Weekly Planner</p>
-        <a href="book6.html" class="button">Read More</a>
-      </div>   
+
+      <aside class="panel">
+        <h3>Reading vibe</h3>
+        <ul>
+          <li>Dark psychological tension</li>
+          <li>Unreliable narrators (sometimes)</li>
+          <li>Emotional stakes that actually matter</li>
+          <li>Endings that don’t beg for approval</li>
+        </ul>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          Want a recommendation? Start with the book that makes you slightly uncomfortable.
+        </p>
+      </aside>
+    </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear(2026);
-  </script>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
