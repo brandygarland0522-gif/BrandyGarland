@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not Without Asking | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+
+      <div class="nav-links">
+        <a href="books.html" aria-current="page">Books</a>
+        <a href="stories.html">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Not Without Asking</h2>
+      <p>Magic is life. The world is dark. Their love makes it worse.</p>
+    </div>
+
+    <div class="split">
+
+      <!-- Main book card -->
+      <article class="card">
+        <div class="cover">
+          <img src="images/not-without-asking.jpg" alt="Not Without Asking cover">
+        </div>
+
+        <div class="card-body">
+          <p class="muted" style="margin-bottom: 10px;">
+            Genre: Fiction / Fantasy Romance · Dark world, high stakes
+          </p>
+
+          <p>
+            Nessa West is a High Mage, brilliant and dangerous in ways the world pretends not to need.
+            Nolan O’Connor is a magical vampire from an old bloodline, the kind of outcast people fear
+            because it’s easier than admitting they want his power.
+          </p>
+
+          <p style="margin-top: 10px;">
+            They should have never met. Now there’s no going back. The world is afraid,
+            and it will stop at nothing to keep them apart.
+          </p>
+
+          <div class="rule"></div>
+
+          <h3>Highlights</h3>
+          <ul style="margin-top: 10px; padding-left: 18px; color: var(--muted);">
+            <li>Forbidden love in a world where magic is survival.</li>
+            <li>Old bloodlines, political fear, and power that comes with consequences.</li>
+            <li>Romance with teeth: devotion, danger, and choices that cost.</li>
+          </ul>
+
+          <p style="margin-top: 14px;">
+            <strong>Available in:</strong> Paperback and Ebook
+          </p>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <!-- Replace the # with your Amazon link when live -->
+            <a class="btn btn-primary" href="#" onclick="alert('Add the purchase link when it’s live.'); return false;">
+              Buy (Coming Soon)
+            </a>
+            <a class="btn btn-ghost" href="books.html">
+              Back to Books
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="panel">
+        <h3>Good for readers who like</h3>
+        <ul>
+          <li>Mage + vampire pairing</li>
+          <li>Dark fantasy worlds</li>
+          <li>High emotion, real stakes</li>
+        </ul>
+
+        <div class="rule"></div>
+
+        <p class="small">
+          When you have the Amazon link, replace the “Buy (Coming Soon)” button URL and change the button text to “Buy on Amazon.”
+        </p>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
