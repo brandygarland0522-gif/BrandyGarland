@@ -24,9 +24,10 @@ body {
    Header & Navigation
 ========================= */
 header {
-  background: #f7f7f7;
-  border-bottom: 1px solid #ddd;
+  background: #e6f4f6; /* soft teal */
+  border-bottom: 1px solid #cfe6ea;
 }
+
 
 .navbar {
   max-width: 1200px;
