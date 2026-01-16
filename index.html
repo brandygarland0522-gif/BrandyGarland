@@ -9,20 +9,20 @@
 
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="navbar-brand">Brandy Garland</a>
+<!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Brandy Garland</a>
 
-      <div class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="books.html">Books</a>
-        <a href="merch.html">Merch</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="merch.html">Merch</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 
 <!-- Hero -->
 <section class="hero" style="background-image: url('images/hero.png');">
@@ -31,8 +31,8 @@
   <div class="hero-content">
     <h1>Pull Up a Chair</h1>
     <p>
-      Thoughtful stories, quiet faith, and creative work
-      for readers who like depth without the noise.
+      Dark fiction, honest faith, and creative work
+      for readers who read closely and think for themselves.
     </p>
 
     <div class="hero-actions">
@@ -42,108 +42,48 @@
   </div>
 </section>
 
+<!-- Featured Books -->
+<section class="section">
+  <h2 class="section-title">Featured Books</h2>
 
-  <!-- Featured Books -->
-  <section class="section" id="featured-books">
-    <h2 class="section-title">Featured Books</h2>
-
-    <div class="books-grid">
-
-      <div class="book-card">
-        <img src="images/No Clean Exit Cover .png" alt="No Clean Exit cover" />
-        <h3>No Clean Exit</h3>
-        <p>
-          A dark romantic suspense featuring moral ambiguity,
-          power dynamics, and love under threat.
-        </p>
-        <a href="book1.html" class="button">Read More</a>
-      </div>
-
-      <div class="book-card">
-        <img src="images/The Memory That Killed Her Cover .png" alt="The Memory That Killed Her cover" />
-        <h3>The Memory That Killed Her</h3>
-        <p>
-          A psychological domestic noir exploring control,
-          obedience, and survival inside love.
-        </p>
-        <a href="book2.html" class="button">Read More</a>
-      </div>
-
-      <div class="book-card">
-        <img src="images/Coloring Nightmares Cover .png" alt="Coloring Nightmares cover" />
-        <h3>Coloring Nightmares</h3>
-        <p>
-          A clean, unsettling coloring book designed for
-          quiet focus and dark creativity.
-        </p>
-        <a href="book3.html" class="button">Read More</a>
-      </div>
-
+  <div class="books-grid">
+    <div class="book-card">
+      <img src="images/No Clean Exit Cover .png" alt="No Clean Exit cover" />
+      <h3>No Clean Exit</h3>
+      <p>A dark romantic suspense built on moral ambiguity and love under threat.</p>
+      <a href="book1.html" class="button">Read More</a>
     </div>
 
-    <div class="section-cta">
-      <a href="books.html" class="button secondary">View All Books</a>
-    </div>
-  </section>
-
-  <!-- Featured Merch -->
-  <section class="section" id="featured-merch">
-    <h2 class="section-title">Featured Merch</h2>
-
-    <div class="products-grid">
-
-      <div class="product-card">
-        <img src="images/tee.png" alt="Unisex Jersey Short Sleeve Tee" />
-        <h3>Unisex Jersey Short Sleeve Tee</h3>
-        <p>
-          Soft, lightweight unisex tee designed for
-          everyday comfort and durability.
-        </p>
-        <a href="merch-tee.html" class="button">View Product</a>
-      </div>
-
-      <div class="product-card">
-        <img src="images/jesus-i-never-said-that-hoodie.png" alt="Jesus I Never Said That Hoodie" />
-        <h3>Jesus: I Never Said That</h3>
-        <p>
-          Minimalist faith humor hoodie with clean typography
-          and quiet conviction.
-        </p>
-        <a href="jesus-hoodie.html" class="button">View Product</a>
-      </div>
-
+    <div class="book-card">
+      <img src="images/The Memory That Killed Her Cover .png" alt="The Memory That Killed Her cover" />
+      <h3>The Memory That Killed Her</h3>
+      <p>A psychological domestic noir about control, obedience, and survival.</p>
+      <a href="book2.html" class="button">Read More</a>
     </div>
 
-    <div class="section-cta">
-      <a href="merch.html" class="button secondary">View All Merch</a>
+    <div class="book-card">
+      <img src="images/Coloring Nightmares Cover .png" alt="Coloring Nightmares cover" />
+      <h3>Coloring Nightmares</h3>
+      <p>Quietly unsettling pages designed for focus and dark creativity.</p>
+      <a href="book3.html" class="button">Read More</a>
     </div>
-  </section>
+  </div>
 
-  <!-- Newsletter -->
-  <section class="section" id="signup">
-    <h2 class="section-title">Stay in Touch</h2>
+  <div class="section-cta">
+    <a href="books.html" class="button secondary">View All Books</a>
+  </div>
+</section>
 
-    <p style="max-width: 600px; margin: 0 auto 2rem; text-align: center;">
-      Get updates on new releases, merch drops, and projects.
-      No spam. No noise.
-    </p>
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+</footer>
 
-    <div style="text-align: center;">
-      <a href="mailto:Brandygarland0522@gmail.com?subject=Newsletter Signup" class="button">
-        Join the Newsletter
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
+
 
