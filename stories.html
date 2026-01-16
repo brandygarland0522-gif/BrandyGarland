@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html" aria-current="page">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Stories</h2>
+      <p>Short personal writing. No filters. No performance.</p>
+    </div>
+
+    <div class="grid">
+      <article class="story">
+        <h3>Faith, but honest</h3>
+        <p>What I keep, what I question, and why certainty is rarely the point.</p>
+        <div class="meta">3 min read · <a class="link" href="#">Read</a></div>
+      </article>
+
+      <article class="story">
+        <h3>What survival looks like in real life</h3>
+        <p>The version that doesn’t fit neatly into a quote graphic.</p>
+        <div class="meta">5 min read · <a class="link" href="#">Read</a></div>
+      </article>
+
+      <article class="story">
+        <h3>Why I write dark fiction</h3>
+        <p>Not because I love darkness. Because I love what people do inside it.</p>
+        <div class="meta">4 min read · <a class="link" href="#">Read</a></div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Brandy Garland.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
