@@ -249,6 +249,18 @@ header {
   .book-card a {
     align-self: center;
   }
+   /* --- FIX: Merch page buttons should NOT be full width --- */
+.products-grid .button {
+  width: auto !important;
+  display: inline-block !important;
+  text-align: center;
+}
+
+.products-grid .product-card a.button {
+  align-self: flex-start;     /* left aligned */
+  margin: 0 1rem 1.25rem;
+}
+
 }
 
 
