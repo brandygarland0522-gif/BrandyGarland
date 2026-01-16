@@ -3,97 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brandy Garland | Books & Merch</title>
+  <title>About | Brandy Garland</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- Navigation -->
-<header>
-  <nav class="navbar">
-    <a href="index.html" class="navbar-brand">Brandy Garland</a>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">Brandy Garland</a>
 
-    <div class="navbar-links">
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="merch.html">Merch</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="merch.html">Merch</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- Hero -->
-<section class="hero hero-home">
-  <div class="hero-inner">
-    <div class="hero-card">
-      <p class="hero-kicker">Faith. Fiction. Focus.</p>
+  <!-- About -->
+  <section class="section">
+    <h1 class="section-title">About the Author</h1>
 
-      <h1>Pull Up a Chair</h1>
-
-      <p class="hero-sub">
-        Dark fiction, honest faith, and creative work for readers who like depth,
-        not noise.
-      </p>
-
-      <div class="hero-actions">
-        <a href="books.html" class="button">Browse Books</a>
-        <a href="merch.html" class="button secondary">View Merch</a>
+    <div class="about-wrap">
+      <div class="about-photo">
+        <!-- Change this filename to your actual image -->
+        <img class="author-photo" src="images/brandy.jpg" alt="Brandy Garland" />
       </div>
 
-      <div class="hero-links">
-        <a href="books.html">Start with my books</a>
-        <span>•</span>
-        <a href="about.html">About Brandy</a>
-        <span>•</span>
-        <a href="contact.html">Say hello</a>
+      <div class="about-copy">
+        <p>
+          I write dark fiction with emotional teeth, and I keep faith honest. I’m interested
+          in what people do when they’re cornered, what love costs, and what truth looks like
+          when you stop performing it.
+        </p>
+
+        <p>
+          You’ll find stories here that don’t comfort on command. They ask better questions.
+          If you’re the type who reads closely and thinks for yourself, you’re in the right place.
+        </p>
+
+        <div class="about-actions">
+          <a href="books.html" class="button">Browse Books</a>
+          <a href="contact.html" class="button secondary">Get in Touch</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
+  </footer>
 
-<!-- Featured Books -->
-<section class="section">
-  <h2 class="section-title">Featured Books</h2>
-
-  <div class="books-grid">
-    <div class="book-card">
-      <img src="images/No Clean Exit Cover .png" alt="No Clean Exit cover" />
-      <h3>No Clean Exit</h3>
-      <p>A dark romantic suspense built on moral ambiguity and love under threat.</p>
-      <a href="book1.html" class="button">Read More</a>
-    </div>
-
-    <div class="book-card">
-      <img src="images/The Memory That Killed Her Cover .png" alt="The Memory That Killed Her cover" />
-      <h3>The Memory That Killed Her</h3>
-      <p>A psychological domestic noir about control, obedience, and survival.</p>
-      <a href="book2.html" class="button">Read More</a>
-    </div>
-
-    <div class="book-card">
-      <img src="images/Coloring Nightmares Cover .png" alt="Coloring Nightmares cover" />
-      <h3>Coloring Nightmares</h3>
-      <p>Quietly unsettling pages designed for focus and dark creativity.</p>
-      <a href="book3.html" class="button">Read More</a>
-    </div>
-  </div>
-
-  <div class="section-cta">
-    <a href="books.html" class="button secondary">View All Books</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
