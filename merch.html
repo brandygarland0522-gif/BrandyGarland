@@ -3,84 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Merch | Brandy Garland</title>
+  <title>Merch | Read It Again Studio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="navbar-brand">My Books</a>
-
- <div class="navbar-links">
-  <a href="index.html">Home</a>
-  <a href="books.html">Books</a>
-  <a href="merch.html">Merch</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-    </nav>
-  </header>
-
-  <!-- Merch Hero (simple) -->
-  <section class="section">
-    <h1 class="section-title" style="margin-bottom: 0.75rem;">Merch</h1>
-
-    <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center;">
-      Shirts and other things you can wear/use while reading, writing, recovering,
-      or surviving your daily responsibilities.
-    </p>
-
-    <!-- Merch Grid -->
-    <div class="products-grid">
-
-      <!-- Product 1: Tee -->
-      <div class="product-card">
-        <img src="images/tee.png" alt="Unisex Jersey Short Sleeve Tee" />
-        <h3>Unisex Jersey Short Sleeve Tee</h3>
-        <p>
-          A soft, lightweight unisex tee designed for everyday wear.
-          Comfortable, durable, and made to hold up to real life.
-        </p>
-        <a
-     <a href="merch-tee.html" class="button merch-btn">
-      View Product
-      </a>
-
-        </a>
-      </div>
-      <div class="product-card">
-  <img src="images/jesus-i-never-said-that-hoodie.png" alt="Jesus I Never Said That Hoodie" />
-  <h3>Jesus: I Never Said That</h3>
-  <p>Minimalist faith humor hoodie with clean typography.</p>
-  <a href="jesus-hoodie.html" class="button">View Product</a>
-</div>
-
-
-      <!-- Copy this block to add more merch -->
-      <!--
-      <div class="product-card">
-        <img src="images/your-merch-image.png" alt="Merch item name" />
-        <h3>Merch Item Name</h3>
-        <p>Short description.</p>
-        <a href="https://your-printify-link" class="button" target="_blank">Buy on Printify</a>
-      </div>
-      -->
-
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Read It Again Studio</a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="merch.html">Merch</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Brandy Garland. All rights reserved.</p>
-  </footer>
+<section class="section">
+  <h1 class="section-title">Merch</h1>
+  <p style="max-width:800px;margin:0 auto 2rem;text-align:center;">
+    Shirts and other things you can wear while reading, writing,
+    recovering, or surviving daily responsibilities.
+  </p>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear(2026);
-  </script>
+  <div class="products-grid">
+
+    <!-- Tee -->
+    <div class="product-card">
+      <img src="images/tee.png" alt="Unisex Jersey Short Sleeve Tee">
+      <h3>Unisex Jersey Short Sleeve Tee</h3>
+      <p>Soft, lightweight unisex tee designed for everyday wear.</p>
+      <a href="merch-tee.html" class="button merch-btn">View Product</a>
+    </div>
+
+    <!-- Hoodie -->
+    <div class="product-card">
+      <img src="images/jesus-i-never-said-that-hoodie.png" alt="Jesus I Never Said That Hoodie">
+      <h3>Jesus: I Never Said That</h3>
+      <p>Minimalist faith humor hoodie with clean typography.</p>
+      <a href="jesus-hoodie.html" class="button merch-btn">View Product</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Read It Again Studio</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear(2026);
+</script>
 
 </body>
 </html>
+
