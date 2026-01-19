@@ -301,9 +301,9 @@ footer{
 
 .portrait img{
   width: 100%;
-  height: auto;
-  border-radius: 14px;
-  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Mobile: stack nicely */
