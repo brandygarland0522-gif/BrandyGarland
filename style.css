@@ -275,6 +275,16 @@ footer{
   .grid-3{ grid-template-columns:1fr; }
   .split{ grid-template-columns:1fr; }
   .preview-grid{ grid-template-columns: repeat(2, 1fr); }
+   /* About page photo size control */
+.about-image{
+  max-width: 320px;
+}
+
+.about-image img{
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
 }
 
 
