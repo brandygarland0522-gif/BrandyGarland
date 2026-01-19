@@ -298,12 +298,13 @@ footer{
 .portrait{
   max-width: 320px;
 }
-
 .portrait img{
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
 }
 
 /* Mobile: stack nicely */
