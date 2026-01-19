@@ -125,14 +125,12 @@ header{
 .portrait{
   width:280px;
 }
-
-.portrait img{
-  width:100%;
-  aspect-ratio:1 / 1;
-  object-fit:cover;
-  border-radius:50%;
-  border:1px solid var(--line);
-  background:#fff;
+.about .portrait img{
+  width: 280px !important;
+  height: 280px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 1px solid var(--line) !important;
 }
 
 /* =========================
