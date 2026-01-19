@@ -167,6 +167,16 @@ header{
   height:100%;
   object-fit:cover;
 }
+/* Make Featured Books covers smaller (without affecting other images) */
+.grid-3 .card .cover{
+  max-width: 220px;
+  margin: 0 auto;          /* centers the cover */
+  border-bottom: 0;        /* optional: removes the divider line */
+}
+
+.grid-3 .card{
+  text-align: center;      /* optional: makes it look cleaner */
+}
 
 /* =========================
    Split Layout (if you use it on other pages)
