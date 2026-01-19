@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story Title | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* light layout help, won’t fight your main CSS */
+    .story-wrap { max-width: 760px; margin: 0 auto; }
+    .story-header { margin-bottom: 18px; }
+    .story-header h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 8px; }
+    .story-meta { color: #555; font-size: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .story-meta .pill {
+      border: 1px solid #e5e5e5; padding: 4px 10px; border-radius: 999px; background: #fff; color: #444;
+    }
+    .story-body p { margin: 0 0 14px; }
+    .story-body h2 { margin: 26px 0 10px; font-size: 1.25rem; }
+    .back-row { margin-top: 22px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html" aria-current="page">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="story-wrap">
+
+      <header class="story-header">
+        <h1>Story Title</h1>
+
+        <div class="story-meta">
+          <span class="pill">4 min read</span>
+          <span class="pill">2026-01-01</span>
+          <span class="pill">Tags: Personal, Faith</span>
+        </div>
+
+        <div class="back-row">
+          <a class="link" href="stories.html">← Back to Stories</a>
+        </div>
+      </header>
+
+      <article class="story-body">
+        <p>Start the story here.</p>
+        <p>Keep paragraphs short. One idea per paragraph. Your readers have the attention span of squirrels.</p>
+      </article>
+
+      <div class="back-row">
+        <a class="link" href="stories.html">← Back to Stories</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Brandy Garland</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
