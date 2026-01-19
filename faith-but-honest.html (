@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faith, but honest | Brandy Garland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Brandy Garland</a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="stories.html" aria-current="page">Stories</a>
+        <a href="merch.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="section-title">
+      <h2>Faith, but honest</h2>
+      <p class="meta">3 min read · <a class="link" href="stories.html">← Back to Stories</a></p>
+    </div>
+
+    <article class="story-body">
+      <p>
+        Faith, for me, has never been a neat little sentence with a bow on it.
+        People love certainty because it feels like control. And humans love control the way toddlers love scissors.
+      </p>
+
+      <p>
+        I believe in God. That part is simple. What isn’t simple is the way people act like belief requires pretending
+        you never have questions. Like questions are betrayal. Like curiosity is a crime scene.
+      </p>
+
+      <p>
+        I’ve learned that some of the loudest “faith” is actually fear. Fear of being wrong. Fear of being judged.
+        Fear of having to admit you don’t know. But not knowing is normal. It’s human. It’s honest.
+      </p>
+
+      <p>
+        I don’t reject scripture. I reject the way people use it like a weapon or a remote control.
+        I reject the version of God that needs you small, quiet, and obedient so someone else can stay powerful.
+      </p>
+
+      <p>
+        If God is real, then truth can survive my questions. If God is real, the universe isn’t fragile.
+        If God is real, I don’t have to lie to fit in.
+      </p>
+
+      <p>
+        I think God shows up in patterns. In timing. In the way life keeps offering lessons I didn’t request.
+        In the way healing doesn’t happen in a straight line, but it happens anyway.
+      </p>
+
+      <p>
+        Some days my faith looks like prayer. Some days it looks like sitting in silence and admitting I’m tired.
+        Some days it looks like choosing integrity when no one would notice if I didn’t.
+      </p>
+
+      <p>
+        I don’t need certainty to keep walking. I need honesty. I need humility. I need a God big enough to handle me as I am,
+        not as a performance.
+      </p>
+
+      <p>
+        If faith is real, it should make you softer with people, not harder. It should make you braver, not meaner.
+        It should make you more truthful, not more fake.
+      </p>
+
+      <p>
+        That’s the version I’m keeping.
+      </p>
+    </article>
+
+    <p class="meta"><a class="link" href="stories.html">← Back to Stories</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Brandy Garland</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
